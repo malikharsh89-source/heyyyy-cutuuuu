@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#f9c6d4" />
+  <title>For My Cutuuu ❤️</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CUSTOM CURSOR (desktop only)               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 1 — OPENING SPLASH                 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="splash" class="splash-screen">
+    <div class="splash-particles" id="splashParticles"></div>
+    <div class="splash-flowers" id="splashFlowers"></div>
+
+    <div class="splash-content">
+      <div class="splash-heart-wrap">
+        <div class="splash-heart-pulse">❤️</div>
+        <div class="heart-rings"></div>
+      </div>
+
+      <h1 class="splash-heading" id="splashHeading">Heyyy meri Cutuuu! 🥺❤️</h1>
+
+      <p class="splash-subtitle">
+        Ek chhoti si duniya banayi hai...<br />
+        <em>Sirf tumhare liye.</em>
+      </p>
+
+      <button class="btn-surprise" id="openSurpriseBtn">
+        <span class="btn-inner">Open Your Surprise 💗</span>
+        <div class="btn-shimmer"></div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MAIN WEBSITE (hidden until splash clicked) -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="mainSite" class="main-site hidden">
+
+    <!-- ── FLOATING HEARTS BACKGROUND ── -->
+    <div class="bg-hearts" id="bgHearts"></div>
+
+    <!-- ── NAV ── -->
+    <nav class="nav" id="mainNav">
+      <div class="nav-logo">❤️ Cutuuu</div>
+      <div class="nav-links">
+        <a href="#apology">Apology</a>
+        <a href="#reasons">Why You</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#letter">Letter</a>
+        <a href="#final">Final</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 2 — THE APOLOGY (DIL SE)           -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="apology" class="section apology-section">
+      <div class="apology-bg-deco"></div>
+      <div class="container">
+        <div class="section-tag reveal">Dil Se 💕</div>
+
+        <h2 class="apology-heading reveal">
+          Arey bhagyawan,<br /><em>maan bhi jaao..</em>
+        </h2>
+
+        <div class="apology-poem reveal">
+          <div class="poem-line" data-delay="0">"Arey bhagyawan maan bhi jaao,</div>
+          <div class="poem-line" data-delay="300">Russiii nhi rehte jaan"</div>
+        </div>
+
+        <!-- TEDDY SVG ILLUSTRATION -->
+        <div class="teddy-wrap reveal" id="teddyApology">
+          <div class="teddy-container">
+            <svg class="teddy-svg" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <!-- ears -->
+              <circle cx="58" cy="52" r="22" fill="#c8956c"/>
+              <circle cx="58" cy="52" r="14" fill="#e8b89a"/>
+              <circle cx="142" cy="52" r="22" fill="#c8956c"/>
+              <circle cx="142" cy="52" r="14" fill="#e8b89a"/>
+              <!-- head -->
+              <ellipse cx="100" cy="80" rx="52" ry="48" fill="#d4a574"/>
+              <!-- face base -->
+              <ellipse cx="100" cy="88" rx="30" ry="24" fill="#e8b89a"/>
+              <!-- eyes -->
+              <circle cx="84" cy="72" r="7" fill="#2d1a0e"/>
+              <circle cx="116" cy="72" r="7" fill="#2d1a0e"/>
+              <circle cx="86" cy="70" r="2.5" fill="white"/>
+              <circle cx="118" cy="70" r="2.5" fill="white"/>
+              <!-- nose -->
+              <ellipse cx="100" cy="85" rx="6" ry="4" fill="#2d1a0e"/>
+              <!-- mouth smile -->
+              <path d="M90 93 Q100 102 110 93" stroke="#2d1a0e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- blush -->
+              <ellipse cx="76" cy="88" rx="10" ry="6" fill="#f4a0b0" opacity="0.5"/>
+              <ellipse cx="124" cy="88" rx="10" ry="6" fill="#f4a0b0" opacity="0.5"/>
+              <!-- body -->
+              <ellipse cx="100" cy="160" rx="52" ry="52" fill="#c8956c"/>
+              <!-- tummy -->
+              <ellipse cx="100" cy="162" rx="30" ry="28" fill="#e8b89a"/>
+              <!-- arms -->
+              <ellipse cx="52" cy="148" rx="18" ry="30" fill="#c8956c" transform="rotate(-20 52 148)"/>
+              <ellipse cx="148" cy="148" rx="18" ry="30" fill="#c8956c" transform="rotate(20 148 148)"/>
+              <!-- legs -->
+              <ellipse cx="78" cy="204" rx="20" ry="14" fill="#c8956c"/>
+              <ellipse cx="122" cy="204" rx="20" ry="14" fill="#c8956c"/>
+              <!-- SORRY heart sign -->
+              <rect x="62" y="118" width="76" height="44" rx="8" fill="#ff6b8a"/>
+              <text x="100" y="136" text-anchor="middle" font-family="Georgia" font-size="13" fill="white" font-weight="bold">SORRY</text>
+              <text x="100" y="154" text-anchor="middle" font-size="16">❤️</text>
+            </svg>
+            <div class="teddy-bounce-shadow"></div>
+          </div>
+        </div>
+
+        <div class="apology-message reveal">
+          <div class="glass-card apology-card">
+            <p>Main maanta hu ki mai <strong>perfect nhi hu.</strong></p>
+            <p>Kabhi galti krta hoo, kabhi tumhe samajhne mei late ho jaata hoon.</p>
+            <br/>
+            <p>Lekin tumhari feelings mere liye <strong>most important hain.</strong></p>
+            <p>Main sirf tumhara gussa khatam nahi karna chahta,</p>
+            <p><em>Main tumhe samajhna bhi chahta hoon.</em></p>
+          </div>
+        </div>
+
+        <a href="#reasons" class="btn-cta reveal">
+          Thoda aur aage dekho, meri jaan ❤️
+          <span class="cta-arrow">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 3 — WHY YOU ARE MY FAVOURITE       -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="reasons" class="section reasons-section">
+      <div class="container">
+        <div class="section-tag reveal">My Favourite Things 🌸</div>
+        <h2 class="section-title reveal">
+          Why You Are My<br /><em>Favourite Person</em>
+        </h2>
+        <p class="section-sub reveal">Tap on each one to discover something special ✨</p>
+
+        <div class="reasons-grid" id="reasonsGrid">
+
+          <div class="reason-item reason-smile reveal" data-index="0">
+            <div class="reason-front">
+              <div class="reason-icon">😊</div>
+              <div class="reason-label">Your Smile</div>
+            </div>
+            <div class="reason-back">
+              <p>"Tumhari smile meri favourite notification hai."</p>
+            </div>
+          </div>
+
+          <div class="reason-item reason-happy reveal" data-index="1">
+            <div class="reason-front">
+              <div class="reason-icon">☀️</div>
+              <div class="reason-label">Your Happiness</div>
+            </div>
+            <div class="reason-back">
+              <p>"Tum khush hoti ho toh mera din ban jaata hai."</p>
+            </div>
+          </div>
+
+          <div class="reason-item reason-nakhre reveal" data-index="2">
+            <div class="reason-front">
+              <div class="reason-icon">👑</div>
+              <div class="reason-label">Your Tantrums</div>
+            </div>
+            <div class="reason-back">
+              <p>"Tumhare nakhre bhi special hain, madam ji."</p>
+            </div>
+          </div>
+
+          <div class="reason-item reason-presence reveal" data-index="3">
+            <div class="reason-front">
+              <div class="reason-icon">🌙</div>
+              <div class="reason-label">Your Presence</div>
+            </div>
+            <div class="reason-back">
+              <p>"Tumhare saath ordinary moments bhi special lagte hain."</p>
+            </div>
+          </div>
+
+          <div class="reason-item reason-fav reveal" data-index="4">
+            <div class="reason-front">
+              <div class="reason-icon">💫</div>
+              <div class="reason-label">My Favourite Person</div>
+            </div>
+            <div class="reason-back">
+              <p>"Among billions of people, you are my favourite."</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 4 — PHOTO GALLERY                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-tag reveal">Our Moments 📸</div>
+        <h2 class="section-title reveal">
+          Our Little<br /><em>World</em>
+        </h2>
+        <p class="section-sub reveal">These moments are my favourite memories 🥺</p>
+
+        <div class="polaroid-grid" id="polaroidGrid">
+
+          <div class="polaroid reveal" data-rotate="-3" style="--rot: -3deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo1.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">🌸</div>
+            </div>
+            <div class="polaroid-caption">Hamare pehle wala function ❤️</div>
+          </div>
+
+          <div class="polaroid reveal" data-rotate="2" style="--rot: 2deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo2.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">💕</div>
+            </div>
+            <div class="polaroid-caption">Just us being us. 🥺</div>
+          </div>
+
+          <div class="polaroid reveal" data-rotate="-2" style="--rot: -2deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo3.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">🌺</div>
+            </div>
+            <div class="polaroid-caption">My favourite human 🥺</div>
+          </div>
+
+          <div class="polaroid reveal" data-rotate="3" style="--rot: 3deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo4.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">🌹</div>
+            </div>
+            <div class="polaroid-caption">One of my favourite moments ❤️</div>
+          </div>
+
+          <div class="polaroid reveal" data-rotate="-1" style="--rot: -1deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo5.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">💫</div>
+            </div>
+            <div class="polaroid-caption">Forever my Cutuuu. 💗</div>
+          </div>
+
+          <div class="polaroid reveal" data-rotate="2.5" style="--rot: 2.5deg">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo6.jpg" alt="Us together" class="polaroid-img" onerror="this.parentElement.classList.add('img-fallback')" />
+              <div class="polaroid-fallback">🌸</div>
+            </div>
+            <div class="polaroid-caption">Main bahut lucky hoon. ✨</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 5 — THE LETTER                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="letter" class="section letter-section">
+      <div class="letter-bg-deco"></div>
+      <div class="container">
+        <div class="section-tag reveal">Dil Ki Baat 💌</div>
+        <h2 class="section-title reveal">
+          A Letter From<br /><em>My Heart</em>
+        </h2>
+
+        <div class="envelope-wrap reveal" id="envelopeWrap">
+          <div class="envelope" id="envelope">
+
+            <!-- ENVELOPE BODY -->
+            <div class="env-body">
+              <div class="env-left-flap"></div>
+              <div class="env-right-flap"></div>
+              <div class="env-bottom-flap"></div>
+              <div class="env-top-flap" id="envTopFlap"></div>
+
+              <div class="env-label">
+                <span class="env-to">To My Cutuuu ❤️</span>
+                <span class="env-hint">Tap to open 💌</span>
+              </div>
+
+              <!-- LETTER (hidden inside) -->
+              <div class="letter-content" id="letterContent">
+                <div class="letter-paper">
+                  <div class="letter-header">
+                    <span class="letter-date">With all my love 💕</span>
+                  </div>
+                  <p class="letter-salutation">Dear Cutuuu,</p>
+                  <p>Pata hai, mujhe bilkul achha nahi lagta jab hum dono ke beech <em>narazgi aa jaati hai.</em></p>
+                  <p>Main perfect nahi hoon. Kabhi-kabhi galtiyan karta hoon aur kabhi apni baat sahi se express bhi nahi kar pata.</p>
+                  <p class="letter-highlight">Lekin ek baat sach hai...</p>
+                  <p><strong>Tum mere liye bahut special ho.</strong></p>
+                  <p>Main chahta hoon ki tum hamesha apni feelings mujhse share kar sako. Main tumhari baat sunna chahta hoon, tumhe samajhna chahta hoon.</p>
+                  <p><em>Tumhari smile bahut precious hai,</em><br/>aur main uski wajah banna chahta hoon.</p>
+                  <p class="letter-closing">I love you, meri bhagyawan.</p>
+                  <p class="letter-sign">Forever your favourite idiot. ❤️</p>
+                </div>
+                <div class="letter-scroll-hint" id="letterScrollHint">↕ scroll to read ↕</div>
+              </div>
+            </div>
+
+          </div>
+          <p class="envelope-hint-text">👆 Tap the envelope to open your letter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 6 — LOVE QUIZ                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="section-tag reveal">Just For Fun 🎀</div>
+        <h2 class="section-title reveal">
+          Mini Love<br /><em>Quiz 💝</em>
+        </h2>
+
+        <div class="quiz-wrap reveal" id="quizWrap">
+          <div class="quiz-card" id="quizCard">
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar" id="quizProgressBar" style="width:0%"></div>
+            </div>
+
+            <div class="quiz-question-num" id="quizNum">Question 1 of 3</div>
+            <div class="quiz-question" id="quizQuestion">Who is the cutest person in this world?</div>
+
+            <div class="quiz-options" id="quizOptions">
+              <!-- filled by JS -->
+            </div>
+          </div>
+
+          <div class="quiz-result hidden" id="quizResult">
+            <div class="quiz-result-emoji" id="quizResultEmoji">🎉</div>
+            <h3 id="quizResultTitle">Quiz Complete!</h3>
+            <p id="quizResultMsg">You are literally the cutest human alive! ❤️</p>
+            <button class="btn-cta" onclick="restartQuiz()">Play Again 🔄</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 7 — SMILE RECOVERY DEPARTMENT      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hospital" class="section hospital-section">
+      <div class="container">
+        <div class="hospital-board reveal">
+          <div class="hospital-sign">
+            <span class="hospital-cross">➕</span>
+            <span class="hospital-title" id="hospitalTitle">Cutuuu Smile Recovery Department</span>
+          </div>
+        </div>
+
+        <div class="hospital-card reveal">
+          <div class="hospital-row">
+            <span class="hospital-label">📋 Diagnosis:</span>
+            <span class="hospital-val diagnosis-text">"Thoda sa gussa detected."</span>
+          </div>
+          <div class="hospital-divider"></div>
+          <div class="hospital-label-title">💊 Recommended Treatment:</div>
+          <div class="treatment-list" id="treatmentList">
+            <div class="treatment-item" data-index="0">
+              <span class="treatment-icon">🤗</span>
+              <span>1000 virtual hugs</span>
+              <span class="treatment-check hidden">✅</span>
+            </div>
+            <div class="treatment-item" data-index="1">
+              <span class="treatment-icon">😘</span>
+              <span>Unlimited forehead kisses</span>
+              <span class="treatment-check hidden">✅</span>
+            </div>
+            <div class="treatment-item" data-index="2">
+              <span class="treatment-icon">🫂</span>
+              <span>One tight hug</span>
+              <span class="treatment-check hidden">✅</span>
+            </div>
+            <div class="treatment-item" data-index="3">
+              <span class="treatment-icon">💝</span>
+              <span>Unlimited care</span>
+              <span class="treatment-check hidden">✅</span>
+            </div>
+            <div class="treatment-item" data-index="4">
+              <span class="treatment-icon">🙏</span>
+              <span>One sincere apology</span>
+              <span class="treatment-check hidden">✅</span>
+            </div>
+          </div>
+
+          <div class="hospital-progress-wrap">
+            <div class="hospital-progress-label">
+              <span>Mission: Bring Back That Beautiful Smile</span>
+              <span id="smilePercent">0%</span>
+            </div>
+            <div class="hospital-progress-track">
+              <div class="hospital-progress-fill" id="smileProgress"></div>
+            </div>
+          </div>
+
+          <button class="btn-treatment reveal" id="treatmentBtn">
+            Start Treatment 🧸💕
+          </button>
+
+          <div class="treatment-teddy hidden" id="treatmentTeddy">
+            <div class="treatment-teddy-emoji">🧸</div>
+            <div class="treatment-hearts" id="treatmentHearts"></div>
+            <p class="treatment-message">Sending all the hugs! 💕</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SECTION 8 — FINAL SURPRISE                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="final" class="section final-section">
+      <div class="final-stars" id="finalStars"></div>
+      <div class="final-flowers" id="finalFlowers"></div>
+
+      <div class="container">
+        <div class="final-content reveal">
+          <div class="final-teddy-anim">🧸</div>
+
+          <h2 class="final-heading">
+            Ek last baat,<br /><em>Cutuuu...</em>
+          </h2>
+
+          <div class="final-message glass-card">
+            <p>Naraz rehne ka poora <strong>haq hai tumhe.</strong></p>
+            <br/>
+            <p>Bas itna chahta hoon ki jab tumhara mann kare,</p>
+            <p><em>apne iss pagal insaan se baat kar lena.</em></p>
+            <br/>
+            <p>Tumhari smile mere liye bahut special hai.</p>
+            <br/>
+            <p class="final-love-line">I LOVE YOU, CUTUUU! ❤️</p>
+          </div>
+
+          <div class="final-buttons">
+            <button class="btn-happy" id="btnHappy">
+              Thoda sa maan gayi 🥺
+            </button>
+            <button class="btn-angry" id="btnAngry">
+              Abhi bhi gussa hoon 😤
+            </button>
+          </div>
+
+          <!-- Happy Response -->
+          <div class="final-response hidden" id="happyResponse">
+            <div class="celebration-emoji">🎉🌸💐🎊✨</div>
+            <h3>YAYYYYY!</h3>
+            <p>Meri Cutuuu ki smile wapas aa gayi! ❤️</p>
+            <div class="celebration-hearts" id="celebrationHearts"></div>
+          </div>
+
+          <!-- Angry Response -->
+          <div class="final-response hidden" id="angryResponse">
+            <div class="angry-teddy">🧸</div>
+            <div class="angry-heart">💔→❤️</div>
+            <p>Koi baat nahi madam ji.</p>
+            <p>Main yahin hoon.</p>
+            <p><em>Jab mann kare tab baat kar lena.</em></p>
+            <p class="hug-line">Ek virtual hug bhej raha hoon. 🧸❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-hearts">❤️ 🌸 💕 🌺 ❤️</div>
+      <p>Made with <span class="heart-beat">❤️</span> for my Cutuuu</p>
+      <p class="footer-sub">Sirf tumhare liye banayi thi yeh duniya 🌸</p>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top hidden" id="backToTop">↑</button>
+
+  </div><!-- end #mainSite -->
+
+  <!-- CONFETTI CANVAS -->
+  <canvas id="confettiCanvas" class="confetti-canvas hidden"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
